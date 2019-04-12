@@ -58,6 +58,8 @@ if (!gameChoice) {
             window.alert('Yes/No answers only. Refresh page to try again')
           }
         }
+      } else if (fourthAnswer === 'no') {
+        window.alert('O no, Im stumped! You win!')
       }
     } else if (thirdAnswer > 1 && thirdAnswer <= 5) {
       let fourthAnswer = window.prompt('Interesting, is it leafy?')
