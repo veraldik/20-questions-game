@@ -15,8 +15,6 @@ if (!gameChoice) {
     var stopHere = window.prompt('Hmmm, is it a fruit?')
     if (stopHere === 'yes' || stopHere === 'no') {
       window.alert('O no, I only know vegetables.')
-    } else {
-      window.alert('I didnt understand your input ):')
     }
   }
   if (secondAnswer) {
@@ -31,7 +29,7 @@ if (!gameChoice) {
       var fourthAnswer = window.prompt('Thats not very many, so its big?')
       if (fourthAnswer) {
         fourthAnswer = fourthAnswer.trim().toLowerCase()
-      } 
+      }
       if (fourthAnswer === 'yes') {
         var randomNumber = Math.random()
         if (randomNumber > 0.5) {
@@ -61,6 +59,8 @@ if (!gameChoice) {
         }
       } else if (fourthAnswer === 'no') {
         window.alert('O no, Im stumped! You win!')
+      } else {
+        window.alert('Yes/No answers only. Refresh page to try agian')
       }
     } else if (thirdAnswer > 1 && thirdAnswer <= 5) {
       let fourthAnswer = window.prompt('Interesting, is it leafy?')
@@ -92,6 +92,10 @@ if (!gameChoice) {
             }
           }
         }
+      } else if (fourthAnswer === 'no') {
+        window.alert('Im stumped. you win!')
+      } else {
+        window.alert('Yes/No answers only. Refresh page to try again')
       }
     } else if (thirdAnswer > 5) {
       let fourthAnswer = window.prompt('Okay, is it oval shaped?')
@@ -109,6 +113,10 @@ if (!gameChoice) {
             window.prompt('Yes/No answers only. Refresh page to try again')
           }
         }
+      } else if (fourthAnswer === 'no') {
+        window.alert('Im stumped. You win!')
+      } else {
+        window.alert('Yes/No answers only. Refresh page to try again')
       }
     } else {
       window.alert('I didnt understand your input ):')
