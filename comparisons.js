@@ -31,11 +31,12 @@ if (!gameChoice) {
       var fourthAnswer = window.prompt('Thats not very many, so its big?')
       if (fourthAnswer) {
         fourthAnswer = fourthAnswer.trim().toLowerCase()
-      } if (fourthAnswer === 'yes') {
+      } 
+      if (fourthAnswer === 'yes') {
         var randomNumber = Math.random()
         if (randomNumber > 0.5) {
           var cucumber = window.prompt('Were you thinking of a cucumber?')
-        } 
+        }
         if (cucumber) {
           cucumber = cucumber.trim().toLowerCase()
           if (cucumber === 'yes') {
@@ -47,7 +48,7 @@ if (!gameChoice) {
           }
         } else if (randomNumber > 0.0) {
           var zucchini = window.prompt('Were you thinking of a zucchini?')
-        } 
+        }
         if (zucchini) {
           zucchini = zucchini.trim().toLowerCase()
           if (zucchini === 'yes') {
